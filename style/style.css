@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #ECECF0;
   display: flex;
   justify-content: center;
 }
 body .background {
-  background-color: burlywood;
+  background-color: #fff;
   position: relative;
   height: 85vh;
   width: 60vw;
@@ -20,10 +20,9 @@ body .background {
   flex-direction: column;
   justify-content: center;
   border-radius: 25px;
-  z-index: -1;
+  box-shadow: -10px 10px 10px 10px #e5e5e7;
 }
 body .background header {
-  background-color: aqua;
   position: absolute;
   top: 1px;
   display: flex;
@@ -38,7 +37,7 @@ body .background header .Title {
   /*background-color: red;*/
   font-weight: 500px;
   margin-left: 20px;
-  color: white;
+  color: #4F169D;
 }
 body .background header .MenuContainer {
   display: flex;
@@ -49,31 +48,49 @@ body .background header .MenuContainer {
   gap: 20px;
   margin-right: 20px;
 }
-body .background header .MenuContainer a {
+body .background header .MenuContainer li a {
   text-decoration: none;
+  color: #9CB1BE;
+}
+body .background header .MenuContainer li a:hover {
+  color: #4F169D;
 }
 body .background hr {
   position: relative;
   bottom: 57px;
   margin: 20px;
+  border-color: #F4F4F4;
 }
 body .background .Container {
-  /*background-color: azure;*/
   position: relative;
   left: 40px;
-  bottom: 15px;
+  bottom: 50px;
   width: 42.7%;
 }
 body .background .Container p {
   margin-top: 15px;
 }
 body footer {
-  background-color: beige;
   position: absolute;
+  width: 53%;
   bottom: 40px;
+  display: flex;
+  justify-content: space-around;
 }
 body footer .ContactInf {
+  position: absolute;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   list-style: none;
+  right: 0;
+}
+body footer .ContactInf img {
+  width: 24px;
+  height: 24px;
+}
+body footer h5 {
+  position: absolute;
+  color: #7F7E81;
+  left: 0;
+  font-weight: 200px;
 }/*# sourceMappingURL=style.css.map */

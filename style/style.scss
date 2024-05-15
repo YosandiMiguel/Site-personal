@@ -7,14 +7,14 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: #ECECF0;
 
     display: flex;
     justify-content: center;
 
 
     .background {
-        background-color: burlywood;
+        background-color: #fff;
 
         position: relative;
         height: 85vh;
@@ -24,10 +24,9 @@ body {
         flex-direction: column;
         justify-content: center;
         border-radius: 25px;
-        z-index: -1;
+        box-shadow: -10px 10px 10px 10px rgba($color: #E5E5E7, $alpha: 1.0);
 
         header {
-            background-color: aqua;
 
             position: absolute;
             top: 1px;
@@ -45,7 +44,7 @@ body {
 
                 font-weight: 500px;
                 margin-left: 20px;
-                color: white;
+                color: #4F169D;
             }
 
             .MenuContainer {
@@ -57,9 +56,16 @@ body {
                 gap: 20px;
                 margin-right: 20px;
 
+                li{
+
                     a {
                         text-decoration: none;
-                    }    
+                        color: #9CB1BE;
+                    }  
+                    a:hover{
+                        color: #4F169D;
+                    } 
+                }
 
             }
         }
@@ -67,15 +73,15 @@ body {
             position: relative;
             bottom: 57px;
             margin: 20px;
+            border-color: #F4F4F4;
 
         }
 
         .Container{
-            /*background-color: azure;*/
     
             position: relative;
             left: 40px;
-            bottom: 15px;
+            bottom: 50px;
             width: 42.7%;
 
             p{
@@ -86,17 +92,32 @@ body {
     }
 
     footer{
-        background-color: beige;
+
 
         position: absolute;
+        width: 53%;
         bottom: 40px;
+        display: flex;
+        justify-content: space-around;
 
          .ContactInf{
+            position: absolute;
             display: flex;
-            gap: 40px;
+            gap: 20px;
             list-style: none;
-            
+            right: 0;
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
          }
+        h5{
+            position: absolute;
+            color: #7F7E81;
+            left: 0;
+            font-weight: 200px;
+        }
     }
 
 }
